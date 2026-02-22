@@ -15,13 +15,15 @@
 # and the PG will write to the console the kind of error and in which line it is
 
 meta:
-	ADDON_NAME = ofxAddonTemplate
+	ADDON_NAME = ofxWebSocketpp
 	ADDON_DESCRIPTION = ofxAddonTemplate is amazing!
 	ADDON_AUTHOR = @yournamehere
-	ADDON_TAGS = "addon" "template"
+	ADDON_TAGS = "addon" "ofxWebSocketpp"
 	ADDON_URL = http://github.com/yournamehere/ofxAddonTemplate
 
 common:
+	PROJECT_CFLAGS += -I/usr/include/boost -Ilibs/websocketpp
+
 	# dependencies with other addons, a list of them separated by spaces 
 	# or use += in several lines
 	# ADDON_DEPENDENCIES =
